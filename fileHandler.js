@@ -3,7 +3,7 @@
 /*Use the fs (File System) built-in module to define and export the
 following functions:*/
 
-const fs = require("fs");
+const fs = require('fs');
 
 /*saveTasks(filePath, tasks): Writes the tasks to a file in JSON
 format.*/
@@ -18,7 +18,7 @@ If the file doesn’t exist, return an empty array.*/
 
 function loadTasks(filePath) {
   if (fs.existsSync(filePath)) {
-    const data = fs.readFileSync(filePath, "utf-8");
+    const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data);
   } else {
     return [];

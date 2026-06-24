@@ -9,8 +9,8 @@ console.log(`Task "${task}" added!`);
 }
 
 // listTasks(tasks): Logs all tasks to the console.
-function listTasks(tasks){
-    console.log(tasks);
+function listTasks(tasks) {
+  console.log(tasks);
 }
 
 module.exports = {
